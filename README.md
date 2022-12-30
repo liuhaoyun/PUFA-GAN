@@ -2,14 +2,17 @@
 "PUFA-GAN: A Frequency-Aware Generative Adversarial Network for 3D Point Cloud Upsampling" is accepted by IEEE TIP 2022.
 
 Introduction
+
 This repository is for our IEEE TIP 2022 paper 'PUFA-GAN: A Frequency-Aware Generative Adversarial Network for 3D Point Cloud Upsampling'. The code is modified from PU-GAN.
 
 Installation
+
 This repository is based on Tensorflow and the TF operators from PointNet++. Therefore, you need to install tensorflow and compile the TF operators.
 For installing tensorflow, please follow the official instructions in here. The code is tested under TF1.11 (higher version should also work) and Python 3.6 on Ubuntu 18.04.
 For compiling TF operators, please check tf_xxx_compile.sh under each op subfolder in code/tf_ops folder. Note that you need to update nvcc, python and tensoflow include library if necessary.
 
 Usage
+
 1. Compile the TF operators Follow the above information to compile the TF operators.
 
 2. Train the model: First, you need to download the training patches in HDF5 format from https://drive.google.com/file/d/13ZFDffOod_neuF3sOM0YiqNbIJEeSKdZ/view?usp=drive_open and put it in folder data/train. Then run:

@@ -17,11 +17,11 @@ C. Usage
 
 2. Train the model: First, you need to download the training patches in HDF5 format from https://drive.google.com/file/d/13ZFDffOod_neuF3sOM0YiqNbIJEeSKdZ/view?usp=drive_open and put it in folder data/train. Then run:
 
-python pufa_gan.py --phase train
+  python pufa_gan.py --phase train
 
 3. Evaluate the model: First, you need to download the pretrained model from /log (automatically generated during training), extract it and put it in folder 'model'. Then run:
 
-python pufa_gan.py --phase test
+  python pufa_gan.py --phase test
 
 Note that our pretrained model has been put into /model.
 
@@ -29,13 +29,13 @@ Note that our pretrained model has been put into /model.
 We provide the code to calculate the uniform metric in the evaluation code folder. In order to use it, you need to install the CGAL library. Please refer https://www.cgal.org/download/linux.html and PU-Net to install this library. 
 Then run: 
 
-cd evaluation_code
+  cd evaluation_code
 
-cmake .
+  cmake .
 
-make
+  make
 
-./evaluation file_name.off file_name.xyz
+  ./evaluation file_name.off file_name.xyz
 
 The second argument is the mesh, and the third one is the predicted points.
 

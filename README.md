@@ -16,10 +16,13 @@ Usage
 1. Compile the TF operators Follow the above information to compile the TF operators.
 
 2. Train the model: First, you need to download the training patches in HDF5 format from https://drive.google.com/file/d/13ZFDffOod_neuF3sOM0YiqNbIJEeSKdZ/view?usp=drive_open and put it in folder data/train. Then run:
+
 python pufa_gan.py --phase train
 
 3. Evaluate the model: First, you need to download the pretrained model from /log (automatically generated during training), extract it and put it in folder 'model'. Then run:
+
 python pufa_gan.py --phase test
+
 Note that our pretrained model has been put into /model.
 
 4. Evaluation code
@@ -27,8 +30,11 @@ We provide the code to calculate the uniform metric in the evaluation code folde
 Then run: 
 
 cd evaluation_code
+
 cmake .
+
 make
+
 ./evaluation file_name.off file_name.xyz
 
 The second argument is the mesh, and the third one is the predicted points.

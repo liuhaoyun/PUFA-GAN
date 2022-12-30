@@ -31,7 +31,9 @@ make
 The second argument is the mesh, and the third one is the predicted points.
 
 Cite:
+
    If PUFA-GAN is useful for your research, please consider citing:
+   
 @ARTICLE{9961237,
   author={Liu, Hao and Yuan, Hui and Hou, Junhui and Hamzaoui, Raouf and Gao, Wei},
   journal={IEEE Transactions on Image Processing}, 
@@ -43,7 +45,9 @@ Cite:
   doi={10.1109/TIP.2022.3222918}}
   
 Questions
+
   Please contact 'liuhaoxb@gmail.com'
   
 Thanks 
+
   Thank PU-GAN for the source code support.
